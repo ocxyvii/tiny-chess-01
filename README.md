@@ -36,9 +36,9 @@ mean of 1.29 s and a worst of 2.48 s, 611 s for six games.
 
 ## Size, build and run
 
-`main.py` takes 4,000 of the 4,096 bytes a file may; the five-file snapshot is
-about 6,300 of 8,192. `engine.src.py` is its readable source, uncommitted
-because the cap cannot hold both.
+`main.py` takes 4,000 of the 4,096 bytes a file may; the five-file snapshot
+fills 8,183 of the 8,192 it may. `engine.src.py` is its readable source,
+uncommitted: the cap cannot hold both.
 
 ```sh
 node cli/makefun.mjs compress engine.src.py --out main.py
